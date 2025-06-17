@@ -201,13 +201,13 @@ button.getstarted:hover{
 
 .homecontent .downloadbtn .getstarted{
     margin-top: 10px;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transform-origin: top center;
 }
 
 .homeimg{
-    height: 280px;
-    width: 280px;
+    height: 300px;
+    width: 300px;
 }
 
 .homecontent{
@@ -216,4 +216,92 @@ button.getstarted:hover{
     gap: 40px;
 }
 
+.phoneimg{
+    height: 220px;
+    width: 220px;   
+}
 
+.setupt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.setup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top:80px;
+}
+
+
+.text1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    font-style: 'Inter', sans-serif;
+}
+
+.text2{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    font-style: 'Inter', sans-serif;
+}
+
+.down{
+    height: 176px;
+    width: 176px;
+}
+
+.intext1{
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+    font-style: 'Inter', sans-serif;
+}
+
+.instructions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 60px;
+}
+
+.ins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ins p{
+    text-align: center;
+}
+
+.setupwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.ins{
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ins:hover {
+    transform: scale(1.5);
+    ;
+}
