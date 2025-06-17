@@ -372,20 +372,32 @@ button.getstarted:hover{
     font-style: 'Inter', sans-serif;
 }
 
+.ctext{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .component img{
     width: 20%;
     height: 20%;
 }
 
-.component .bbtn{
-    width: 2%;   
-    height: 2%;
+.swipesection .bbtn{
+    
     transform: rotateY(180deg);
+    
 }
 
-.component .fbtn{
-    width: 2%;   
-    height: 2%;
+
+.swipesection .bbtn{
+    width:40px;   
+    height:40px;
+    
+}
+
+.swipesection .fbtn{
+    width:40px;   
+    height:40px;
     
 }
 
@@ -428,9 +440,222 @@ button.getstarted:hover{
     align-items: center;
     justify-content: center;
     gap: 40px;
+    margin-top: 20px;
+    
+}
+
+.swipewrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     margin-top: 50px;
     margin-left: 250px;
     margin-right: 250px;
 }
 
+.slider-link {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  z-index: 1;
+}
 
+.digibankwrap{
+    margin-top: 114px;
+    margin: bottom 50px;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.dtitle{
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+    font-style: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.dtext{
+    font-size: 17px;
+    font-weight: 400;
+    color: #000000;
+    font-style: 'Inter', sans-serif;
+    text-align: center;
+    margin-left: 345px;
+    margin-right: 345px;
+    margin-top: 30px;
+    
+}
+
+.dimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.dimg img{
+    height: 184px;
+    width: 184px;
+}
+
+.dimg p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    font-style: 'Inter', sans-serif;
+    z-index: 4;
+    
+}
+
+.dtextbg{
+    background-color: rgba(132, 132, 132, 0.492);
+    z-index: 2;
+    border-radius: 10px;
+    height: 248px;
+    width: 272px;
+    text-align: center;
+    padding: 5px;
+   
+}
+
+/*.dtextbg p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0000003e;
+    font-style: 'Inter', sans-serif;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}*/
+
+.dtext2{
+    font-size: 17px;
+    font-weight: 400;
+    color: #000000;
+    font-style: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.digicard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.digi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+
+/*.footerbg{
+    position: absolute;
+    width: 2832px;
+    height: 1593px;
+    left: 0px;
+    top: 3350px;
+    
+}
+
+.footerwrapper{
+    height: 881px;
+    width: 1496px;
+    overflow: hidden;
+    
+    
+
+}*/
+
+
+.footerwrapper {
+    position: relative;        
+    height: 881px;
+    width: 100%; 
+    overflow: hidden;          
+    margin: 0 auto;            
+}
+
+.footerbg {
+    position: absolute;        
+    width: 2832px;
+    height: 1593px;
+    left: -668px;              
+    top: -156px;               
+}
+
+.ico{
+    width: 40px;
+    height: 40px;
+}
+
+.ftitle{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    font-style: 'Inter', sans-serif;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footercon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerlinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footerfollow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.downloadbtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
