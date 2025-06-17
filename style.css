@@ -616,7 +616,7 @@ button.getstarted:hover{
 
 .footerwrapper {
     position: relative;
-    height: 550px;
+    height: 580px;
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
@@ -674,6 +674,7 @@ button.getstarted:hover{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .dwnlg {
@@ -699,6 +700,7 @@ button.getstarted:hover{
     gap: 15px;
     min-width: 200px;
     color: white;
+    margin-top: 10px;
 }
 
 .footercon ul,
@@ -707,12 +709,13 @@ button.getstarted:hover{
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 10px;
 }
 
 .footercon li,
 .footerlinks li,
 .footerflw li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .footercon a,
