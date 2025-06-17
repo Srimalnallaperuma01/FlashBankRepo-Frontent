@@ -1,7 +1,136 @@
-.header{
-    height:112;
-    width:100%;
-    background: linear-gradient(to right, #0F00E0, #0E076A);
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*gap: 82px;*/
+    margin-left:10%;
+    margin-right:10%;
+    list-style: none;
 
 }
+
+.links-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    gap: 70px;
+    
+    
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 2%;
+    width: auto;
+    white-space: nowrap;
+       
+}
+
+.links a:hover{
+    /*color: #0F00E0;*/
+    background-color: rgba(255, 255, 255, 0.188);
+    border-radius: 10px;
+
+    padding: 5px;
+    width: auto;
+}
+
+.links li{
+    list-style: none;
+}
+
+.header{
+    height:112px;
+    width:100%;
+    background: linear-gradient(to right, #0F00E0, #0E076A);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.getstarted{
+    background-color: #FFD700;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 550;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 3%;
+    width: auto;
+    white-space: nowrap;
+    
+    
+}
+
+button.getstarted{
+    padding: 10px 20px;
+}
+
+button.getstarted:hover{
+    background-color: #ffff00;
+    /*color: black;*/
+   
+}
+
+.getsbtn{
+    border: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, #0F00E0, #0E076A);
+  height: 112px;
+  display: flex;
+  align-items: center;
+}
+
+.imgwrap {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+
+.homebg {
+  position: absolute;
+  left: -1635px;
+  top: -112px;
+  transform: rotateY(180deg);
+  width: 3328px;
+  height: 1872px;
+}
+
+
+
+
