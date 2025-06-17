@@ -138,22 +138,22 @@ html, body {
   align-items: center;
 }
 
-/*.homebg {
+.homebg {
   transform: rotateY(180deg);
   width: 100%;
   height: auto;
   max-width: none;
   display: block;
-}*/
+}
 
-.homebg {
+/*.homebg {
   position: absolute;
   left: -1835px;
   top: -274px;
   transform: rotateY(180deg);
   width: 3328px;
   height: 1872px;
-}
+}*/
 
 
 
