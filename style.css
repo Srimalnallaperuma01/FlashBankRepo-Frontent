@@ -76,14 +76,11 @@
     
 }
 
-.getstarted{
+/*.getstarted{
     background-color: #FFD700;
     height: 50px;
     width: 150px;
-    border-radius: 10px;
-    
-
-    color: rgb(0, 0, 0);
+    border-radius: 15px;
     text-decoration: none;
     font-size: 17px;
     font-weight: 550;
@@ -103,6 +100,34 @@ button.getstarted{
 button.getstarted:hover{
     background-color: #ffff00;
    
+}*/
+
+.getstarted {
+    background-color: #fff200;
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+}
+
+.getstarted:hover {
+    background-color: #fff200;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.getstarted:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .getsbtn{
@@ -144,7 +169,7 @@ button.getstarted:hover{
   z-index: 5;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.7); /* ✅ THIS is the key */
+  transform: translate(-50%, -50%) scale(0.7);
 
   text-align: center;
   color: rgb(255, 255, 255);
