@@ -121,8 +121,9 @@
   transform: translate(50%,50%),scale(0.7);
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -137,6 +138,14 @@ body {
   align-items: center;
 }
 
+/*.homebg {
+  transform: rotateY(180deg);
+  width: 100%;
+  height: auto;
+  max-width: none;
+  display: block;
+}*/
+
 .homebg {
   position: absolute;
   left: -1835px;
@@ -145,6 +154,8 @@ body {
   width: 3328px;
   height: 1872px;
 }
+
+
 
 .homecontent {
   position: absolute;
