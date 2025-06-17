@@ -10,17 +10,20 @@
     justify-content: center;
     width: 100%;
     /*gap: 82px;*/
-    margin-left:10%;
-    margin-right:10%;
+    margin-left :10%;
+    margin-right :10%;
     list-style: none;
+    
 
 }
 
 .links-list{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    
     
 }
 
@@ -61,7 +64,7 @@
 }
 
 .header{
-    height:112px;
+    height:0px;
     width:100%;
     background: linear-gradient(to right, #0F00E0, #0E076A);
     display: flex;
@@ -69,6 +72,8 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    
+    
 }
 
 .getstarted{
@@ -112,6 +117,7 @@ button.getstarted:hover{
   height: 112px;
   display: flex;
   align-items: center;
+  transform: translate(50%,50%),scale(0.7);
 }
 
 
@@ -126,24 +132,41 @@ button.getstarted:hover{
 
 .homebg {
   position: absolute;
-  left: -1635px;
-  top: -112px;
+  left: -1835px;
+  top: -274px;
   transform: rotateY(180deg);
   width: 3328px;
   height: 1872px;
 }
 
-.homecontent{
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: rgb(255, 255, 255);
-    display:flex;
-    flex-direction: column;
-    gap: 5px;
+.homecontent {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7); /* ✅ THIS is the key */
+
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.homecontent h1{
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    white-space: nowrap;
+    
+
 }
 
 .homecontent .line1{
@@ -485,7 +508,7 @@ button.getstarted:hover{
 }
 
 .dtext{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     color: #000000;
     font-style: 'Inter', sans-serif;
@@ -520,7 +543,7 @@ button.getstarted:hover{
 }
 
 .dtextbg{
-    background-color: rgba(132, 132, 132, 0.492);
+    background-color: rgba(199, 199, 199, 0.303);
     z-index: 2;
     border-radius: 10px;
     height: 248px;
@@ -543,7 +566,7 @@ button.getstarted:hover{
 }*/
 
 .dtext2{
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
     color: #000000;
     font-style: 'Inter', sans-serif;
@@ -590,72 +613,154 @@ button.getstarted:hover{
 }*/
 
 
+
 .footerwrapper {
-    position: relative;        
-    height: 881px;
-    width: 100%; 
-    overflow: hidden;          
-    margin: 0 auto;            
+    position: relative;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .footerbg {
-    position: absolute;        
+    position: absolute;
     width: 2832px;
     height: 1593px;
-    left: -668px;              
-    top: -156px;               
+    left: -668px;
+    top: -76px;
+    z-index: 1;                 
+    pointer-events: none;    
 }
 
-.ico{
-    width: 40px;
-    height: 40px;
-}
-
-.ftitle{
-    font-size: 24px;
-    font-weight: 600;
-    color: #000000;
-    font-style: 'Inter', sans-serif;
-}
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.footercon{
+.footercontent {
+    position: relative;
+    z-index: 2;               
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    gap: 30px;
+    color: white;
+}
+
+.fti{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.ftitle {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    max-width: 900px;
+    color: #fff;
+}
+
+.ftitle a {
+    color: #eeff00;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.download {
+    display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.footerlinks{
+.dwnlg {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footercon,
+.footerlinks,
+.footerflw {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 15px;
+    min-width: 200px;
+    color: white;
+}
+
+.footercon ul,
+.footerlinks ul,
+.footerflw ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footercon li,
+.footerlinks li,
+.footerflw li {
+    margin-bottom: 8px;
+}
+
+.footercon a,
+.footerlinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footerflw a {
+    display: inline-block;
+}
+
+.ico {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.fend {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
     gap: 10px;
 }
 
-.footerfollow{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.combimg {
+    height: 40px;
 }
 
-.downloadbtn{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.copyright {
+    font-size: 14px;
+    color: white;
 }
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+

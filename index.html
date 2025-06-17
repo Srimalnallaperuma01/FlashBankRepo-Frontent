@@ -6,6 +6,8 @@
     <title>FlashBank</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -13,22 +15,62 @@
     <div class="header">
         <ul class="items">
 
-            <li><a href="#"><img src="src/logo.png" alt="flashlogo"></a></li>
+            <li><a class="flash" href="#"><img src="src/logo.png" alt="flashlogo"></a></li>
 
             <li class="links-list">
-                <ul class="links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Media Center</a></li>
-                    <li><a href="#">Promotions</a></li>
-                </ul>
+            <ul class="links">
+                <li><a href="#" data-section="about">About</a></li>
+                <li><a href="#" data-section="faq">FAQ</a></li>
+                <li><a href="#" data-section="contact">Contact Us</a></li>
+                <li><a href="#" data-section="media">Media Center</a></li>
+                <li><a href="#" data-section="promo">Promotions</a></li>
+            </ul>
             </li>
+
 
             <li class="getsbtn"><button class="getstarted">Get Started</button></li>
 
         </ul>
     </div>
+
+
+    <div id="about" class="content-section" style="display:none;">
+        <h2>About</h2>
+        <p>Details about FlashBank...</p>
+        <p>Sorry the time wasn't enough to build. just click "Back" to go back.</p>
+        <button class="back">Back</button>
+
+    </div>
+
+    <div id="faq" class="content-section" style="display:none;">
+        <h2>FAQ</h2>
+        <p>Frequently asked questions...</p>
+        <p>Sorry the time wasn't enough to build. just click "Back" to go back.</p>
+        <button class="back">Back</button>
+    </div>
+
+    <div id="contact" class="content-section" style="display:none;">
+        <h2>Contact Us</h2>
+        <p>Contact info here...</p>
+        <p>Sorry the time wasn't enough to build. just click "Back" to go back.</p>
+        <button class="back">Back</button>
+    </div>
+
+    <div id="media" class="content-section" style="display:none;">
+        <h2>Media Center</h2>
+        <p>Media resources here...</p>
+        <p>Sorry the time wasn't enough to build. just click "Back" to go back.</p>
+        <button class="back">Back</button>
+    </div>
+
+    <div id="promo" class="content-section" style="display:none;">
+        <h2>Promotions</h2>
+        <p>Promotional offers here...</p>
+        <p>Sorry the time wasn't enough to build. just click "Back" to go back.</p>
+        <button class="back">Back</button>
+    </div>
+
+
 
     <div class="home">
         <div class="homecontent">
@@ -171,19 +213,19 @@
 
     <div class="footerwrapper">
         <img src="src/homebg.jpg" alt="footerbg" class="footerbg">
-    </div>
+    
 
-    <div>
+    <div class="footercontent">
         <div class="ftitle">
-            <p>Need help? We’re here for you 24/7. Reach out anytime for support or explore our FAQ section for quick answers.</p>
+            <p>Need help? We’re here for you 24/7. Reach out anytime for support or explore our <br><a href="#">FAQ section</a> for quick answers.</p>
         </div>
 
-        <div>table</div>
+        <!--div>table</!--div-->
 
         <div class="download">
-            <img src="src/icon-google-play.png" alt="gply">
-            <img src="src/icon-app-store.png" alt="appstore">
-            <img src="src/icon-app-gallery.png" alt="appgallery">
+            <img class="dwnlg" src="src/icon-google-play.png" alt="gply">
+            <img class="dwnlg" src="src/icon-app-store.png" alt="appstore">
+            <img class="dwnlg" src="src/icon-app-gallery.png" alt="appgallery">
         </div>
 
         <div class="footer">
@@ -202,7 +244,7 @@
             </div>
 
             <div class="footerlinks">
-                <p class="fti">Legal</p>
+                <p class="fti">Links</p>
                 <ul>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -231,7 +273,9 @@
                 <p class="copyright">© 2023 Flash Digital Bank. All rights reserved.</p>
         </div>
     </div>
+    </div>
 
-    <link src="script" href="script.js">
+    <script src="script.js"></script>
+
 </body>
 </html>

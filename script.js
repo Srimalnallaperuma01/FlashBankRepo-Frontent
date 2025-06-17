@@ -1,4 +1,31 @@
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.links-list a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const sectionId = link.getAttribute('data-section');
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      const target = document.getElementById(sectionId);
+      if (target) {
+        target.style.display = 'block';
+      }
+    });
+  });
+
+document.querySelectorAll('.back').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.style.display = 'none';
+      });
+    });
+  });
+});
+
+
+
+/*let currentIndex = 0;
   const slides = document.querySelectorAll('.swipewrap');
   const totalSlides = slides.length;
   const slidesContainer = document.querySelector('.swipesection');
@@ -21,4 +48,6 @@ let currentIndex = 0;
       currentIndex--;
       updateSlide();
     }
-  }
+  }*/
+
+
