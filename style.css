@@ -137,9 +137,11 @@
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
   .items{
     margin-bottom: 1rem;
+    transform: scale(0.8);
+    flex-direction: row;
   }
 
   .home {
@@ -149,13 +151,10 @@
     align-items: center;
   }
 
-  /*.home .homecontent, .home .imgwrap {
-    transform: scale(0.2);
-    
-  }*/
-
   .header{
-    position:static;
+    position:absolute;
+    height: 20vh;
+    
   }
 }
 
@@ -819,10 +818,15 @@
 
 .footerwrapper {
     position: relative;
-    height: 580px;
+    height: fit-content;
     width: 100%;
     overflow: hidden;
-    margin: 0 auto;
+    
+}
+
+.footerwrapper{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footerbg {
