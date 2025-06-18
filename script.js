@@ -3,9 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', e => {
       e.preventDefault();
       const sectionId = link.getAttribute('data-section');
+
       document.querySelectorAll('.content-section').forEach(section => {
         section.style.display = 'none';
       });
+
+      document.querySelectorAll('.container').forEach(section => {
+        section.style.display = 'none';
+      });
+
       const target = document.getElementById(sectionId);
       if (target) {
         target.style.display = 'block';
@@ -13,15 +19,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-document.querySelectorAll('.back').forEach(btn => {
+  document.querySelectorAll('.back').forEach(btn => {
     btn.addEventListener('click', e => {
       e.preventDefault();
+
       document.querySelectorAll('.content-section').forEach(section => {
         section.style.display = 'none';
       });
+
+    const mainContainer = document.querySelector('.container');
+      if (mainContainer) {
+      mainContainer.style.display = 'block';
+      }
     });
   });
+
+  document.querySelector('.flash').addEventListener('click', e => {
+  e.preventDefault();
+
+  document.querySelectorAll('.content-section').forEach(section => {
+    section.style.display = 'none';
+  });
+
+  const mainContainer = document.querySelector('.container');
+  if (mainContainer) {
+    mainContainer.style.display = 'block';
+  }
 });
+
+});
+
+
 
 
 
